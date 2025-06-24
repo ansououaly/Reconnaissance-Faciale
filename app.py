@@ -45,7 +45,7 @@ if st.sidebar.button("📄 Voir le journal"):
         st.info("Aucun journal pour le moment.")
 
 st.title("🔍 Système de Reconnaissance Faciale Ansou Oualy")
-
+st.balloons()
 if "image" in st.session_state:
     st.image(st.session_state["image"], caption="Image en cours de reconnaissance")
     face = mtcnn(st.session_state["image"])
